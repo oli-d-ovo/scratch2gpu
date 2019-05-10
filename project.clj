@@ -5,4 +5,5 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [uncomplicate/neanderthal "0.23.1"]]
+  :jvm-opts ["--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED"]
   :repl-options {:init-ns scratch2gpu.core})
