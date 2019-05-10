@@ -10,5 +10,7 @@
                             0.9 3.7
                             0.0 1.0]
                        {:layout :row})
-               h1 (dv 4)]
-  (println (mv! w1 x h1)))
+               h1 (dv 4)
+               w2 (dge 1 4 [0.75 0.15 0.22 0.33])
+               y (dv 1)]
+  (println (mv! w2 (mv! w1 x h1) y)))
